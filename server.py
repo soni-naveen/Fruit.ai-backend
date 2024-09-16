@@ -6,9 +6,9 @@ import os
 
 app = Flask(__name__)
 
-CORS(app, resources={r"/*": {"origins": ["*"]}})
+CORS(app, resources={r"/*": {"origins": ["https://fruit-ai-frontend-eight.vercel.app"]}})
 
-app.config["MONGO_URI"] = "mongodb://localhost:27017/fruitaiDatabase"
+app.config["MONGO_URI"] = os.getenv('DATABASE_URL')
 mongo = PyMongo(app)
 
 # function to serialize data from MongoDB
