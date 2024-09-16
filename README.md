@@ -8,11 +8,11 @@ Update: Edit existing FAQs.\
 Delete: Remove FAQs.
 
 ## Endpoints
-GET /faqs: Fetch all FAQs.\
-GET /faqs/: Fetch a single FAQ by ID.\
-POST /faqs: Create a new FAQ.\
-PUT /faqs/: Update an FAQ by ID.\
-DELETE /faqs/: Delete an FAQ by ID.
+GET /faqs: Fetch all faqs.\
+GET /faqs/:id: Fetch a single faq by ID.\
+POST /faqs: Create a new faq.\
+PUT /faqs/:id: Update a faq by ID.\
+DELETE /faqs/:id: Delete a faq by ID.
 
 ## Setup Backend
 Install Dependencies:
